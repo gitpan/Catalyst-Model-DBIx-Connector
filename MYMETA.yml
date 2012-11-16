@@ -1,0 +1,26 @@
+---
+abstract: 'Catalyst model base class for DBI connections using DBIx::Connector'
+author:
+  - 'jason hord <pravus@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.36
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 0
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921'
+license: mit
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Catalyst-Model-DBIx-Connector
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Catalyst::Model: 0
+  DBIx::Connector: 0
+  Moose: 0
+  namespace::autoclean: 0
+version: 0.00
