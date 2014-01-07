@@ -6,7 +6,7 @@ use Moose;
 
 extends qw( Catalyst::Model );
 
-our $VERSION = '0.00';
+our $VERSION = '0.01';
 
 
 has dsn       => ( is => 'ro', isa => 'Str', required => 1 );
@@ -28,6 +28,8 @@ __PACKAGE__->meta->make_immutable;
 
 1
 __END__
+
+=pod
 
 =head1 NAME
 
@@ -70,14 +72,14 @@ Catalyst::Model::DBIx::Connector - Catalyst model base class for DBI connections
 
 =head1 DESCRIPTION
 
-C<Catalyst::Model::DBIx::Connector> is a simple base class that
+Catalyst::Model::DBIx::Connector is a simple base class that
 can be used to easily add DBI connections to your Catalyst apps.  It
 uses C<DBIx::Connector> to add disconnect detection and automatic
 reconnection to the database once a connection has dropped.
 
 =head1 SEE ALSO
 
-=over 2
+=over 4
 
 =item L<Catalyst>
 
@@ -93,7 +95,7 @@ jason hord E<lt>pravus@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2012, jason hord
+Copyright (c) 2012-2014, jason hord
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
